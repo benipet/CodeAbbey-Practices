@@ -14,7 +14,7 @@ int get_caseNumber(void);
 int* init_container(int size);
 //Input the number cases
 void input_cases(int* container, int size);
-//Returns the smaller the smaller number
+//Returns the smaller number
 int get_min(int x, int y);
 //Display the minimum results
 void display_min(int* container, int size);
@@ -67,7 +67,7 @@ int get_min(int x, int y)
 	return x < y ? x : y;
 }
 
-	void display_min(int* container, int size) {
+void display_min(int* container, int size) {
 	int i;
 
 	for (i = 0; i <= size; i++) {
