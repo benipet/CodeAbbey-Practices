@@ -22,14 +22,16 @@
 int* init_testcase(void);
 //Arithmetic Progression Function
 int prog_arithmetic(int firstVal, int stepSize, int numVal);
+//Display result
+void display_result(int result);
 
 int main(void)
 {
 	
 	int* t = init_testcase();
 	int r = prog_arithmetic(t[0], t[1], t[2]);
-	printf("%d", r);
-	
+	display_result(r);
+
 	free(t);
 
 	return 0;
@@ -61,5 +63,10 @@ int prog_arithmetic(int firstVal, int stepSize, int numVal) {
 	}
 
 	return prog;
+
+}
+
+void display_result(int result) {
+	printf("%d", result);
 
 }
